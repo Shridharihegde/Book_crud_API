@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "53f4234d-0fab-4ae0-ba09-5bbd89f122cf",
+		"name": "Books_management",
+		"description": "Books_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34705791"
+	},
+	"item": [
+		{
+			"name": "book-Read Operation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pride\",\r\n    \"category\":\"novel\",\r\n    \"available\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/book/663682567a12754ebb44949e"
+			},
+			"response": []
+		},
+		{
+			"name": "read_book_by_id Operation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pride\",\r\n    \"category\":\"novel\",\r\n    \"available\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/book/663682567a12754ebb44949e"
+			},
+			"response": []
+		},
+		{
+			"name": "create_book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Operating System\",\r\n    \"category\":\"academics\",\r\n    \"available\":\"false\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/book"
+			},
+			"response": []
+		},
+		{
+			"name": "update_book_by_id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Operating System\",\r\n    \"category\":\"academics\",\r\n    \"available\":\"true\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/book/66368c5f0045b8ccedd22b8b"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_book_by_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Operating System\",\r\n    \"category\":\"academics\",\r\n    \"available\":\"true\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/book/66368c5f0045b8ccedd22b8b"
+			},
+			"response": []
+		}
+	]
+}
